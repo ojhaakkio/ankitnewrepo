@@ -4,11 +4,11 @@ API_ID = API_ID = 20346550
 
 API_HASH = os.environ.get("API_HASH", "bc79c3bea7a626887bdc0871eecf0327")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6570733797:AAFOU0CM_CE4gLBNi8jwnuRkoWWMAXePo6U")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6949366970:AAGxoU9BqLUr3rHcyL3yKL2W7XPc8mMbMKk")
 
 PASS_DB = int(os.environ.get("PASS_DB", "721"))
 OWNER = int(os.environ.get("OWNER" ,"6381511858"))
-LOG = -1002011373978
+LOG =-1002070561493
 
 try:
     ADMINS=[]
