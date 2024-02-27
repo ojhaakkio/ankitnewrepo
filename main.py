@@ -23,7 +23,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6570733797:AAFOU0CM_CE4gLBNi8jwnuRkoWWMAXePo6U",
+             bot_token= "6949366970:AAGxoU9BqLUr3rHcyL3yKL2W7XPc8mMbMKk",
              api_id=20346550,
              api_hash= "bc79c3bea7a626887bdc0871eecf0327")
 
@@ -45,7 +45,7 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
-        await bot.send_document(-1002011373978, x)
+        await bot.send_document(-1002070561493, x)
         await input.delete(True)
         file_name, ext = os.path.splitext(os.path.basename(x))
         credit = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
@@ -175,7 +175,7 @@ async def account_login(bot: Client, m: Message):
                     try:
                         ka = await helper.download(url, name)
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
-                        await copy.copy(chat_id =-1002011373978)
+                        await copy.copy(chat_id =-1002070561493)
                         count+=1
                         os.remove(ka)
                         time.sleep(1)
@@ -189,7 +189,7 @@ async def account_login(bot: Client, m: Message):
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
                         copy = await bot.send_document(chat_id=m.chat.id,document=f'{name}.pdf', caption=cc1)
-                        await copy.copy(chat_id =-1002011373978)
+                        await copy.copy(chat_id =-1002070561493)
                         count += 1
                         os.remove(f'{name}.pdf')
                     except FloodWait as e:
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading 📥:-\n\nVideo Name🚦:- {name}\nQuality 📹 - {raw_text2}\nLink 🔗 :{url}\n\n **bot made by ANKIT❤️**")
+                    prog = await m.reply_text(f"**Downloading 📥:-\n\nVideo Name🚦:- {name}\nQuality 📹 - {raw_text2}\nLink 🔗 :{url}\n\n **bot made by Deepak❤️**")
                     
                     
                     res_file = await helper.download_video(url, cmd, name)
